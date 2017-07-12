@@ -34,7 +34,7 @@ Part 5A: Quickly setup Unity Project
 	1). Details layout (preferred)
 	2). Assets: Create default folders (Materials, Prefabs, Scenes, Scripts)
 	3). Save the scene.
-	4). Commit to git.
+	4). Commit to git. (Name = CombatSandBox)
 Part 5B: World Scale considerations.
 	1). import a cube to see scale.
 	2). rename cube to Ground.
