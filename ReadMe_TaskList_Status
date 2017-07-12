@@ -43,7 +43,7 @@ Part 5B: World Scale considerations.
 	4). Create material(rename to ground) - name it ground color it green (let's be easy on the eyes here.) drag to ground.
 
 Part 5C: Import Ethan
-	1). Assets..Import Characters..select all..Import]
+	1). Assets..Import Characters..select all..Import
 	2). Draq & Drop Ethan into Ground.
 		A). Standard Assets/Characters/ThirdPersonCharacter/Prefabs/ThirdPersonController
 		B). Reset to Origin.
@@ -57,7 +57,7 @@ Part 5D). Layout a simple arena
 	3). Drag Cube into Block (reset transform/gear)
 	4). Set Cube position to .5
 	5). Create prefab of Block. (drag and drop into prefab folder.)
-	6). create new material name it Block.
+	6). create new material name it Block. COlor it blue. 
 	7). Drag Block material into the Block in scene view.
 	8). Click on block in Hierarchy then click on Apply (in the Inspector)
 	9). drag and drop several block prefabs into the scene.
