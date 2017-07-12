@@ -1,0 +1,168 @@
+Demo file to showcase git.
+
+Into: 
+
+Familiar with C# and Unity.
+Solid architecure for commercial release.
+
+1A). check out youtube. google images 
+YouTube: Diablo III: Gameplay Trailer
+Battleheart Legacy - Wizard Gameplay #1
+Torchlight 2: Act 1 - Part 1 (Gameplay)
+1B). get pictures for GDD.
+
+2). 1 page game design document.
+
+Find what you like, and put that into your game.
+
+3). Github
+
+4). git / git extensions
+
+5). Visual Studio Community or VS Code
+
+5). Prototype your RPG.
+TODO List:
+
+A). Quickly setup Unity Project
+B). World Scale considerations.
+C). Import Ethan
+D). Layout a simple arena
+E). Challenge
+
+Part 5A: Quickly setup Unity Project
+	1). Details layout (preferred)
+	2). Assets: Create default folders (Materials, Prefabs, Scenes, Scripts)
+	3). Save the scene.
+	4). Commit to git.
+Part 5B: World Scale considerations.
+	1). import a cube to see scale.
+	2). rename cube to Ground.
+	3). rescale to x=100; z=100.
+	4). Ground  Position Y = -.5
+	4). Create material(rename to ground) - name it ground color it green (let's be easy on the eyes here.) drag to ground.
+
+Part 5C: Import Ethan
+	1). Assets..Import Characters..select all..Import]
+	2). Draq & Drop Ethan into Ground.
+		A). Standard Assets/Characters/ThirdPersonCharacter/Prefabs/ThirdPersonController
+		B). Reset to Origin.
+		C). Rename ThirdPersonController (Ethan) to Player.
+		D). Assign Tag "Player".
+		B). Control S to save. & Play.
+
+Part 5D). Layout a simple arena	
+	1). Create 3d Cube.  Note it is half way submerged.
+	2). Create empty game object rename to block. (reset transform/gear)
+	3). Drag Cube into Block (reset transform/gear)
+	4). Set Cube position to .5
+	5). Create prefab of Block. (drag and drop into prefab folder.)
+	6). create new material name it Block.
+	7). Drag Block material into the Block in scene view.
+	8). Click on block in Hierarchy then click on Apply (in the Inspector)
+	9). drag and drop several block prefabs into the scene.
+	10). Hot key tip: q, w, e, r, t: https://docs.unity3d.com/Manual/UnityHotkeys.html
+	11). Build a sample arena, include a ramp.
+	12). Clean up the hierarchy.
+			A). Create new game object.  Rename to Environment. Reset transform.
+			B). Drag and drop our Ground and all blocks to make them children of the Environment.
+
+6). A Simple (DIY) Follow Camera
+A). View GDD screen shots.
+B). Set up & Create Camera Arm
+C). Position a fixed camera & tag
+D). Write a small script.
+E). Prefab Camera.
+
+
+Part 6A).   View GDD screen shots.
+	1). "How to we want the camera to view our world/main character"
+	
+Part 6B). Set up & Create Camera Arm
+	1). Create GameObject. Reset to origin.(gear gizmo)
+	2). Rename to Camera Arm  ((This will act as an anchor object to the Player; Also fixes the issue of wild camera rotation if you were to just child the camera directly to the player.))
+	3). Child Main Camera to CameraArm.
+
+Part 6C). Position a fixed Camera
+	1). Click on Main Camera to view preview window.  (See how far away Player is...)
+	2). Move Main Camera to desired viewing position.
+	3). Rotate Main Camera to -60 (or to desired viewing angle).
+	-- My Main camera Transform is:
+		P: X=5.5, Y=3, Z=-3.5
+		R: X=0, Y=-60, Z=0
+		S: X=1, Y=1, Z=1
+	4). Tag Main Camera as MainCamera.
+
+Part 6D). Write a small script.
+	1). Create C# script named: CameraFollow
+		A). Attach to Camera Arm
+		B). Keeps Camera Arm at Player's Position
+		C). Use LateUpdate()
+	Source: 	C:\My.Git\OmahaUnity3dTrail\OmahaUnity3dDemoTemp\Assets\Scripts
+	2). Hit play & Test script
+	3). Try changing camera angles/position while in play mode.  Please note: Copy Component from gear gizmo if you want to use those values to update the non-play mode.
+	
+Part 6E). Camera
+	1). Make a prefab from the Camera Arm
+	2). Test prefab (delete Camera Arm in the Hierarchy, then drag and drop Camera Arm from prefabs.) Play.
+	3). Be aware of unity 3d camera assets.  We are not using but they are there...
+	
+
+Part 7: Prototyping with Placeholders
+	1). Find a scren shot that has barriers or hidden areas.
+		https://www.vg247.com/2016/11/05/diablo-3-the-darkening-of-tristram-retro-update-will-be-an-annual-event/
+		(image 4th row, 2nd image) save locally.  C:\Tim\OmahaUnity3d
+	2). Select a block in the scene view.  (This will essentially be a "Billboard")
+		A). Rename the block to Billboard.
+		B). Change Scale: X=19.80; Y=11.14 ((Look at image properties))
+		C). Click and drag the scren shot image to the "Billboard"
+	3). Reconfig your blocks to be somewhat similar to your Billboard. 
+		A). This is simulating different terrain elevations and camera angles for your game.
+		B). Reconfigure your blocks, position, rotation, scale...
+		C). Once finished reconfiguring the blocks adjust the Main Camera if desired.
+	4). Time to add the enemies.
+		A). Assets/Standardassets/Characters/ThirdPersonCharacter/Models/Ethan - click and drag into the scene view.
+		B). Resize scale to .5
+		C). Create new material named "Red Enemy"
+		D). Color the Red Enemy to Red.
+		E). Drag and drop the new material on Ethan.
+		F). Rename Ethan to Enemy
+		G). Duplicate 4 additional Enemy & spread around area.
+	5). Add the Boss Enemy
+		A). Select Enemy and rename to "Enemy Boss"
+		B). Set scale to 1.5 X, Y & Z.
+	6). For fun - paint the sun glasses black.
+		A). Create new material Sun Glasses.
+		B). Select color black.
+		C). Drag and Drop Sun Glass material onto EthanGlasses of all Enemy and EnemyBoss.
+	7). Adjust Player movement.
+		A). Adjust varibales on Third Person Character script within the inspector.
+			1). Moving Turn Speed: from 360 to desired new value. (3600)
+			2). Stationary Turn Speed: from 180 to desired new value. (1800)
+			3). Anim Speed Multiplier: from 1 to (1.2)
+
+		
+		
+		
+	
+	
+	
+What's Next:
+1). 
+		
+
+	
+
+	
+	
+
+		
+	
+	
+	
+
+
+
+
+
+
