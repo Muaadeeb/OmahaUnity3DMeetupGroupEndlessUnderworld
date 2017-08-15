@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndlessUnderworld.Plugins", "EndlessUnderworld.Plugins.csproj", "{A800E874-525A-896C-F5B3-BF383A81BEBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndlessUnderworld", "EndlessUnderworld.csproj", "{D7BE2380-A53A-F2FA-5689-16BD027B1371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndlessUnderworld.Editor.Plugins", "EndlessUnderworld.Editor.Plugins.csproj", "{C90D8076-0D0F-EB82-74A6-4BEA6857D9EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A800E874-525A-896C-F5B3-BF383A81BEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A800E874-525A-896C-F5B3-BF383A81BEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A800E874-525A-896C-F5B3-BF383A81BEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A800E874-525A-896C-F5B3-BF383A81BEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BE2380-A53A-F2FA-5689-16BD027B1371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BE2380-A53A-F2FA-5689-16BD027B1371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BE2380-A53A-F2FA-5689-16BD027B1371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BE2380-A53A-F2FA-5689-16BD027B1371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90D8076-0D0F-EB82-74A6-4BEA6857D9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90D8076-0D0F-EB82-74A6-4BEA6857D9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90D8076-0D0F-EB82-74A6-4BEA6857D9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90D8076-0D0F-EB82-74A6-4BEA6857D9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
